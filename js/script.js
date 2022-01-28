@@ -5,6 +5,7 @@ Vue.config.devtools = true;
 const app = new Vue ({
     el: '#root',
     data: {
+        newTask: '',
         tasks: [
             { text: 'Farina', done: true},
             { text: 'Pasta', done: false},

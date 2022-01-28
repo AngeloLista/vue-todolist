@@ -27,6 +27,11 @@
         </header>
 
         <main class="w-50 mx-auto">
+            <!-- Input -->
+            <div class="input-group mb-3">
+                <input v-model="newTask" type="text" class="form-control" placeholder="Inserisci nuovo elemento">
+                <button class="btn btn-outline-success" type="button">Invio</button>
+              </div>
             <!-- To Do List -->
             <ul class="list-group">
                 <li v-for="(task, index) in tasks" class="list-group-item d-flex justify-content-between">{{ task.text }} <button type="button" class="btn-close" aria-label="Close" @click="deleteTask(index)"></button></li>
