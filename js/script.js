@@ -24,6 +24,9 @@ const app = new Vue ({
                 this.tasks.push({ text: this.newTask, done: false });
                 this.newTask = '';
             }
+        },
+        toggleElementStatus(index) {
+            this.tasks[index].done = !this.tasks[index].done;
         }
 
     }
