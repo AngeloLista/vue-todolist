@@ -29,7 +29,7 @@
         <main class="w-50 mx-auto">
             <!-- To Do List -->
             <ul class="list-group">
-                <li v-for="(task, index) in tasks" class="list-group-item d-flex justify-content-between">{{ task.text }} <button type="button" class="btn-close" aria-label="Close"></button></li>
+                <li v-for="(task, index) in tasks" class="list-group-item d-flex justify-content-between">{{ task.text }} <button type="button" class="btn-close" aria-label="Close" @click="deleteTask(index)"></button></li>
             </ul>
         </main>
 
