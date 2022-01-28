@@ -20,8 +20,10 @@ const app = new Vue ({
             this.tasks.splice(index, 1);
         },
         addTask() {
-            this.tasks.push({ text: this.newTask, done: false });
-            this.newTask = '';
+            if (this.newTask) {
+                this.tasks.push({ text: this.newTask, done: false });
+                this.newTask = '';
+            }
         }
 
     }
