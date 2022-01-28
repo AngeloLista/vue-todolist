@@ -36,7 +36,7 @@
               </div>
             <!-- To Do List -->
             <ul class="list-group">
-                <li v-for="(task, index) in tasks" class="list-group-item d-flex justify-content-between" :class="{done: task.done}" @click="toggleElementStatus(index)"> <div>{{ task.text }}</div><button type="button" class="btn-close" aria-label="Close" @click="deleteTask(index)"></button></li>
+                <li v-for="(task, index) in tasks" class="list-group-item d-flex justify-content-between pointer" :class="{done: task.done}" @click="toggleElementStatus(index)"> <div>{{ task.text }}</div><button type="button" class="btn-close" aria-label="Close" @click="deleteTask(index)"></button></li>
             </ul>
             <!-- Empty List Warning -->
             <h3 v-if="tasks.length === 0" class="text-center my-3">Non ci sono elementi nella lista!</h3>
