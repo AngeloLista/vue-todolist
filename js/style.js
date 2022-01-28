@@ -1,17 +1,19 @@
-console.log('JS OK');
+console.log('Vue ok', Vue);
 
 Vue.config.devtools = true;
 
-const app = new Vue ({
+const root = new Vue({
     el: '#root',
     data: {
         tasks: [
-            { text: 'Farina', done: true},
-            { text: 'Pasta', done: false},
-            { text: 'Noce moscata', done: false},
-            { text: 'Verdure', done: false},
-            { text: 'Acqua', done: false},
-            { text: 'Sale', done: false},
+            'prova',
+            'prova',
+            'prova',
+            'prova',
+            'prova',
         ]
+    },
+    methods: {
+
     }
 })
