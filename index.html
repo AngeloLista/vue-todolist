@@ -30,7 +30,7 @@
             <!-- Input -->
             <div class="input-group mb-3">
                 <input v-model="newTask" type="text" class="form-control" placeholder="Inserisci nuovo elemento">
-                <button class="btn btn-outline-success" type="button">Invio</button>
+                <button class="btn btn-outline-success" type="button" @click="addTask">Invio</button>
               </div>
             <!-- To Do List -->
             <ul class="list-group">
